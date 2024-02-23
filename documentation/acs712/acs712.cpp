@@ -32,10 +32,10 @@ void loop()
 double pridobiIzhodniTok()
 {
   // napetost na ESP32 pinu z upoštevanjem odstopanj
-  // pridobiNapetostNaPin --> glej poglavje funkcije
+  // pridobiNapetostNaPin --> glej poglavje Programske funkcije za branje analognih vhodov
   double napetostNaPin = pridobiNapetostNaPin(TOK_PIN) - TOK_NAPETOST_ODSTOPANJE;
   // dejanska napetost brez delinika napetosti
-  // pretvoriVDejanskoNapetost --> glej poglavje funkcije
+  // pretvoriVDejanskoNapetost --> glej poglavje Programske funkcije za branje analognih vhodov
   double dejanskaNapetost = pretvoriVDejanskoNapetost(napetostNaPin, TOK_UPOR_REFERENCA, TOK_UPOR_MERITEV);
   // izračunan tok z upoštevanjem odstopanj
   double tok = (dejanskaNapetost - (NAPETOST_NAPAJANJA / 2)) / 0.1 - TOK_ODSTOPANJE;
