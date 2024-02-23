@@ -28,7 +28,6 @@ void loop()
 // pridobitev izhodne napetosti
 double pridobiIzhodnoNapetost()
 {
-    // napetost na ESP32 pinu z upoštevanjem odstopanj
     // pridobiNapetostNaPin --> glej poglavje Programske funkcije za branje analognih vhodov
     double pinVoltage = pridobiNapetostNaPin(NAPETOST_PIN);
     // dejanska napetost brez delinika napetosti
