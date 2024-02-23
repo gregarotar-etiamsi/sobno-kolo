@@ -1,4 +1,4 @@
-// osnoven program za merjenje števila obratov na minuto z megnetnim stikalom
+// osnoven program za merjenje števila obratov na minuto z magnetnim stikalom
 
 // pin magnetnega stikala
 #define RPM_STIKALO_PIN 5
