@@ -2,7 +2,7 @@
 
 #define NAPETOST_PIN 35
 
-// delilnik napetosti na za maksimalno 330V
+// delilnik napetosti za maksimalno 330V
 #define NAPETOST_UPOR_REFERENCA 660000
 #define NAPETOST_UPOR_MERITEV 6600
 
