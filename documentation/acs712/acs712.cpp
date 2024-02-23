@@ -45,6 +45,7 @@ double pridobiIzhodniTok()
 // pridobitev napetosti na analognem pinu
 double pridobiNapetostNaPin(int pin)
 {
+  // analogRead vrne 12 bitno število
   int analog = analogRead(pin);
   double napetost = (3.3 / 4095) * analog;
   return napetost;
@@ -53,6 +54,8 @@ double pridobiNapetostNaPin(int pin)
 // pretvori napetost iz delilnika napetosti v dejansko napetost
 double pretvoriVDejanskoNapetost(double napetost, double uporReferenca, double uporMeritev)
 {
+  // uporReferenca predstavlja referenci upor, na katerem ne merimo napetosti
+  // uporMeritev predstavlja upor, na katerem merimo napetost
   double dejanskaNapetost = napetost * (1 + (uporReferenca / uporMeritev));
   return dejanskaNapetost;
 }
