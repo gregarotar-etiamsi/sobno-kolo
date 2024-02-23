@@ -1,3 +1,6 @@
+// osnoven program za merjenje števila obratov na minuto z megnetnim stikalom
+
+// pin magnetnega stikala
 #define RPM_STIKALO_PIN 5
 
 // maksimalen RPM, ki najvrjetnjeje ne bo presežen
