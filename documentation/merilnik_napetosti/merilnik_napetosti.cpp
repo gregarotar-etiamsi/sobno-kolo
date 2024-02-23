@@ -16,8 +16,11 @@ void setup()
 
 double napetost;
 void loop() {
+    // pridobitev napetosti
     napetost = pridobiIzhodnoNapetost();
+    // izpis napetosti prek serial komunikacije
     Serial.println(napetost);
+    // program počaka 1 sekundo (1000ms)
     delay(1000);
 
 }
