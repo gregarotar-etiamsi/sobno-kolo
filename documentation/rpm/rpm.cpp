@@ -44,6 +44,7 @@ void loop()
 
 double izracunajRpm(int casMS)
 {
+    // casMS predstavlja cas enega obrata v ms
     double rpm = 60.0 / (casMS / 1000.0);
     return rpm;
 }
